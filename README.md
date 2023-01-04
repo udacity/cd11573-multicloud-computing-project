@@ -23,10 +23,10 @@ See the documentation here:
 
 1. Open the AWS portal
     1. Open AWS CloudShell
-    2. Clone your git repo: https://github.com/udacity/cd11573-multicloud-computing-project
+    2. Clone your git repo
 2. Open the Azure portal
     1. Open the Azure Cloud Shell
-    2. Clone your git repo: https://github.com/udacity/cd11573-multicloud-computing-project
+    2. Clone your git repo
 
 
 ## Project Instructions

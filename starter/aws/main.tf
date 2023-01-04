@@ -204,22 +204,3 @@ variable "app_count" {
 
 ####### Your Additions Will Start Here ######
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "udacity-tscotto-aws-s3-bucket"
-
-  tags = {
-    Name = "udacity-tscotto-aws-s3-bucket"
-  }
-}
-
-resource "aws_dynamodb_table" "udacity_table" {
-  name           = "udacity-tscotto-aws-dynamodb"
-  billing_mode   = "PROVISIONED"
-  read_capacity  = "10"
-  write_capacity = "10"
-  attribute {
-    name = "udacity"
-    type = "S"
-  }
-  hash_key = "udacity"
-}
