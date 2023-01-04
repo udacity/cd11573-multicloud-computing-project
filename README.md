@@ -68,9 +68,10 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
       dns_name_label      = "udacity-tscotto-azure"
     ```
-6. After you have added the modules, applies the changes to the files and push your changes to your github repositories
-7. Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
-8. In each shell, run the following:
+6. Services you select will be added after commented line `####### Your Additions Will Start Here ######` in the respective cloud provider `main.tf` file.
+7. After you have added the modules, applies the changes to the files and push your changes to your github repositories
+8. Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
+9. In each shell, run the following:
 
     For AWS:
     ```
@@ -85,8 +86,8 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
 
     And type `y` when asked if you want to apply the changes
-9. Wait for the changes to apply. This can take up to 20 min.
-10. Verify the changes took effect:
+10. Wait for the changes to apply. This can take up to 20 min.
+11. Verify the changes took effect:
 
     For Azure:
     1. In Azure go the search bar and type `container-instances` and click the icon that comes up
@@ -107,8 +108,9 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
                 This is my app running on AWS accessing an Azure SQL instance: tscotto-udacity-sql
 
                 And also a dotnet app in Azure: udacity-tscotto-azure-dotnet-app
-11. Complete!
-12. Clean up resources
+12. Please take a screenshot of a running web applications in a browser
+13. Complete!
+14. Clean up resources
 
     For AWS:
     ```
@@ -123,7 +125,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
 
     And type `y` when asked if you want to destroy the resources
-
+15. Please take a screenshot of the cloud console showing the successful Terraform destroy command
 ## License
 
 [License](LICENSE.txt)
