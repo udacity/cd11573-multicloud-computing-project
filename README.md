@@ -19,7 +19,7 @@ See the documentation here:
 
 ### Installation
 
-**NOTE:** This project assumes you have already completed earlier labs and setup your personal Azure and AWS accounts as well as create your personal git copies of the repositories:
+**NOTE:** This project assumes you have already completed earlier labs, set up your personal Azure and AWS accounts, as well as created your personal git copies of the repositories:
 
 1. Open the AWS portal
     1. Open AWS CloudShell
@@ -53,7 +53,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 **NOTE:** There are container groups contained here in the scaffolding for both AWS and Azure. They are not part of the design itself. They are there to test your functionality once you have deployed your work.
 
 ### Instructions
-1. Using the give requirements, select the appropriate cloud providers for each of the 4 app components. Use what we have learned in this course and research.
+1. Using the given requirements, select the appropriate cloud providers for each of the 4 app components. Use what's covered in Udacity's _Multi-Cloud Computing_ course and research.
 2. Create a diagram based on your design.
 3. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
     1. AWS - `starter/aws/main.tf`
@@ -108,7 +108,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
                 And also a dotnet app in Azure: udacity-tscotto-azure-dotnet-app
 11. Complete!
-12. Cleanup resources
+12. Clean up resources
 
     For AWS:
     ```
