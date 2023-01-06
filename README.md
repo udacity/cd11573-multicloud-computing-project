@@ -126,6 +126,14 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
     And type `y` when asked if you want to destroy the resources
 15. Please take a screenshot of the cloud console showing the successful Terraform destroy command
+
+
+## Standout Suggestions
+
+1. Deploy more than 2 services in either cloud provider
+2. Create an additional environment variable to demonstrate even more connectivity between additional services
+3. Create another demonstration application similar to the one used in the project and show it accessing cloud resources
+
 ## License
 
 [License](LICENSE.txt)
