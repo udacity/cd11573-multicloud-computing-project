@@ -1,12 +1,11 @@
-resource "azurerm_resource_group" "udacity" {
-  name     = "udacity-resources"
-  location = "North Central US"
+data "azurerm_resource_group" "udacity" {
+  name     = "Regroup_4gKqrgD_cn"
 }
 
 resource "azurerm_container_group" "udacity" {
   name                = "udacity-continst"
-  location            = azurerm_resource_group.udacity.location
-  resource_group_name = azurerm_resource_group.udacity.name
+  location            = data.azurerm_resource_group.udacity.location
+  resource_group_name = data.azurerm_resource_group.udacity.name
   ip_address_type     = "Public"
   dns_name_label      = "udacity-tscotto-azure"
   os_type             = "Linux"
