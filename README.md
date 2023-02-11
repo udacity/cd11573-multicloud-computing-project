@@ -19,13 +19,19 @@ See the documentation here:
 
 ### Installation
 
-**NOTE:** This project assumes you have already completed earlier labs, set up your personal Azure and AWS accounts, as well as created your personal git copies of the repositories:
+**NOTE:** This project assumes you have already completed earlier labs and setup your labs from the course, as well as created your personal git copies of the repositories:
 
-1. Open the AWS portal
+1. Open the AWS portal from the classroom
     1. Open AWS CloudShell
+    2. Run the following commands to install Terraform:
+        1. `sudo yum install -y yum-utils`
+        2. `sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo`
+        3. `sudo yum -y install terraform`
     2. Clone your git repo
-2. Open the Azure portal
+2. Open the Azure portal from the classroom
     1. Open the Azure Cloud Shell
+        1. Select PowerShell when prompted. Then click Advanced Setup on the next screen
+        2. You can leave the resource group selected, but you’ll need to put in a name for the storage account and file share for your console. Name your storage account all lowercase with no dashes or punctuation. And less than 24 characters. Something like tscottocloudcstorage and tscottofileshare. Then click Create. Allow the console to provision. 
     2. Clone your git repo
 
 
@@ -85,7 +91,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     terraform apply
     ```
 
-    And type `y` when asked if you want to apply the changes
+    And type `yes` and enter when asked if you want to apply the changes
 10. Wait for the changes to apply. This can take up to 20 min.
 11. Verify the changes took effect:
 
@@ -124,7 +130,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     terraform destroy
     ```
 
-    And type `y` when asked if you want to destroy the resources
+    And type `yes` and press enter when asked if you want to destroy the resources
 15. Please take a screenshot of the cloud console showing the successful Terraform destroy command
 
 
@@ -133,6 +139,11 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 1. Deploy more than 2 services in either cloud provider
 2. Create an additional environment variable to demonstrate even more connectivity between additional services
 3. Create another demonstration application similar to the one used in the project and show it accessing cloud resources
+
+## Troubleshooting Tips:
+In AWS you may only be able to run 1 or 2 exercises at a time. If you get an error in the AWS console about not having enough space or out of space, please run the following commands:
+- `cd ~`
+- `rm -rf *`
 
 ## License
 
