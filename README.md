@@ -19,7 +19,7 @@ See the documentation here:
 
 ### Installation
 
-**NOTE:** This project assumes you have already completed earlier labs and setup your labs from the course, as well as created your personal git copies of the repositories:
+**NOTE:** This project assumes you have already set up your labs from the course and created your personal git copies of the repositories:
 
 1. Open the AWS portal from the classroom
     1. Open AWS CloudShell
