@@ -61,18 +61,21 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ### Instructions
 1. Using the given requirements, select the appropriate cloud providers for each of the 4 app components. Use what's covered in Udacity's _Multi-Cloud Computing_ course and research.
-1. Create a diagram based on your design.
-1. Please add an explanation for each provider selection to your README.md file in your final repo submission.
-1. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
+2. Create a diagram based on your design.
+3. Please add an explanation for each provider selection to your README.md file in your final repo submission.
+
+You presented your provider selections to your manager, and for some unforeseen reasons beyond your control, your manager wants you to use the AWS S3 Bucket, AWS DynamoDB, Azure SQL, and Azure dotnet app. So you will deploy these services to their respective providers from here on.
+
+4. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
     1. AWS - `starter/aws/main.tf`
     2. Azure - `starter/azure/main.tf`
-4. Edit the appropriate environment variables for the containers to test your install
+5. Edit the appropriate environment variables for the containers to test your install
     1. Find the following environment variables in the Terraform scaffolding and change their values to reflect your name:
         1. AWS_S3_BUCKET: `udacity-<your_name>-aws-s3-bucket`
         2. AWS_DYNAMO_INSTANCE: `udacity-<your_name>-aws-dynamodb`
         3. AZURE_SQL: `udacity-<your_name>-azure-sql`
         4. AZURE_DOTNET_APP: `udacity-<your_name>-azure-dotnet-app`
-5. Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
+7. Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
     ```
       dns_name_label      = "udacity-tscotto-azure"
     ```
