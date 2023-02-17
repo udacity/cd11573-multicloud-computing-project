@@ -55,6 +55,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     1. Existing dotnet application
 5. Create a diagram of your architecture
     1. Show connectivity between the 2 cloud services. Don't worry about getting the cloud-specifics right with the template. The key is to show the components in each cloud
+6. Add a brief explanation for each service selection from each provider.  
 
 **NOTE:** There are container groups contained here in the scaffolding for both AWS and Azure. They are not part of the design itself. They are there to test your functionality once you have deployed your work.
 
