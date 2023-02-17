@@ -60,8 +60,9 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ### Instructions
 1. Using the given requirements, select the appropriate cloud providers for each of the 4 app components. Use what's covered in Udacity's _Multi-Cloud Computing_ course and research.
-2. Create a diagram based on your design.
-3. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
+1. Create a diagram based on your design.
+1. Please add an explanation for each provider selection to your README.md file in your final repo submission.
+1. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
     1. AWS - `starter/aws/main.tf`
     2. Azure - `starter/azure/main.tf`
 4. Edit the appropriate environment variables for the containers to test your install
