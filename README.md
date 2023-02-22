@@ -53,18 +53,13 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     2. Highly scalable pricing
 4. Select a cloud provider for the Web app
     1. Existing dotnet application
-5. Create a diagram of your architecture
-    1. Show connectivity between the 2 cloud services. Don't worry about getting the cloud-specifics right with the template. The key is to show the components in each cloud
-6. Add a brief explanation for each service selection from each provider.  
 
 **NOTE:** There are container groups contained here in the scaffolding for both AWS and Azure. They are not part of the design itself. They are there to test your functionality once you have deployed your work.
 
 ### Instructions
-1. Using the given requirements, select the appropriate cloud providers for each of the 4 app components. Use what's covered in Udacity's _Multi-Cloud Computing_ course and research.
-2. Create a diagram based on your design.
-3. Please add an explanation for each provider selection to your README.md file in your final repo submission.
+1. With the requirements in mind, your team decided to use AWS S3 due to full S3 API compatibility. The team decided on Azure SQL and a dotnet web app due to Microsoft being the creators of both those technologies. You have the highest compatibility and support from Microsoft with both SQL and dotnet. Your team also wants to use AWS DynamoDB. Do some research using search engines, docs, and pricing calculators from both AWS and Azure to justify why your team chose AWS DynamoDB over Azure's counterpart. Limit your response to less than 150 words.
 
-You presented your provider selections to your manager, and for some unforeseen reasons beyond your control, your manager wants you to use the AWS S3 Bucket, AWS DynamoDB, Azure SQL, and Azure dotnet app. So you will deploy these services to their respective providers from here on.
+2. Create a diagram based on your design for all 4 services. 
 
 4. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
     1. AWS - `starter/aws/main.tf`
