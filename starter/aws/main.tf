@@ -178,7 +178,7 @@ resource "aws_ecs_task_definition" "udacity_app" {
     "networkMode": "awsvpc",
     "environment": [
       {
-        "name": "AZURE_SQL",
+        "name": "AZURE_SQL_SERVER",
         "value": "udacity-tscotto-azure-sql"
       },
       {
