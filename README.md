@@ -68,7 +68,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     1. Find the following environment variables in the Terraform scaffolding and change their values to reflect your name:
         1. AWS_S3_BUCKET: `udacity-<your_name>-aws-s3-bucket`
         2. AWS_DYNAMO_INSTANCE: `udacity-<your_name>-aws-dynamodb`
-        3. AZURE_SQL: `udacity-<your_name>-azure-sql`
+        3. AZURE_SQL_SERVER: `udacity-<your_name>-azure-sql`
         4. AZURE_DOTNET_APP: `udacity-<your_name>-azure-dotnet-app`
 7. Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
     ```
