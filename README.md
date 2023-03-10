@@ -52,7 +52,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     1. Global availability
     2. Highly scalable pricing
 4. Select a cloud provider for the Web app
-    1. Existing dotnet application
+    1. Existing dotnet application (note this is NOT a static website)
 
 **NOTE:** There are container groups contained here in the scaffolding for both AWS and Azure. They are not part of the design itself. They are there to test your functionality once you have deployed your work.
 
