@@ -30,7 +30,7 @@ See the documentation here:
     2. Clone your git repo
 2. Open the Azure portal from the classroom
     1. Open the Azure Cloud Shell
-        1. Select PowerShell when prompted. Then click Advanced Setup on the next screen
+        1. Select PowerShell when prompted. Then click Show advanced settings on the next screen
         2. You can leave the resource group selected, but you’ll need to put in a name for the storage account and file share for your console. Name your storage account all lowercase with no dashes or punctuation. And less than 24 characters. Something like tscottocloudcstorage and tscottofileshare. Then click Create. Allow the console to provision. 
     2. Clone your git repo
 
@@ -141,9 +141,12 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 3. Create another demonstration application similar to the one used in the project and show it accessing cloud resources
 
 ## Troubleshooting Tips:
-In AWS you may only be able to run 1 or 2 exercises at a time. If you get an error in the AWS console about not having enough space or out of space, please run the following commands:
-- `cd ~`
-- `rm -rf *`
+- In AWS you may only be able to run 1 or 2 exercises at a time. If you get an error in the AWS console about not having enough space or out of space, please run the following commands:
+    - `cd ~`
+    - `rm -rf *`
+
+- In Azure, you may receive an error when provisioning your cloud console similar to "Storage Account Creation Failed" or "Authorization Failed". This is likely because you did not select the pre-created resource group from the lab. The pre-created resource group is already selected and is required for the labs. The pre-created resource group name will be similar to `Regroup_4hEF_2G`. When provisioning your cloud console, first select `Show advanced settings`, then ensure you leave the resource group as the default.
+
 
 ## License
 
