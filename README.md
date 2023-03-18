@@ -59,26 +59,35 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 ### Instructions
 1. With the requirements in mind, your team decided to use AWS S3 due to full S3 API compatibility. The team decided on Azure SQL and a dotnet web app due to Microsoft being the creators of both those technologies. You have the highest compatibility and support from Microsoft with both SQL and dotnet. Your team also wants to use AWS DynamoDB. Do some research using search engines, docs, and pricing calculators from both AWS and Azure to justify why your team chose AWS DynamoDB over Azure's counterpart. Limit your response to less than 150 words. Spend no more than 30 mins on this part. Add your explanation to your README.md file in your final repo submission.
 
-2. Create a diagram based on your design for all 4 services. 
+2. Create a diagram based on your design for all 4 services. Note that directional arrows for the flow of traffic is not required.
 
-4. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
+3. Using the [above linked](#resources) references, add the appropriate modules to the given cloud provider Terraform scafolding files:
     1. AWS - `starter/aws/main.tf`
     2. Azure - `starter/azure/main.tf`
-5. Edit the appropriate environment variables for the containers to test your install
+4. Edit the appropriate environment variables for the containers to test your install
     1. Find the following environment variables in the Terraform scaffolding and change their values to reflect your name:
         1. AWS_S3_BUCKET: `udacity-<your_name>-aws-s3-bucket`
         2. AWS_DYNAMO_INSTANCE: `udacity-<your_name>-aws-dynamodb`
         3. AZURE_SQL_SERVER: `udacity-<your_name>-azure-sql`
         4. AZURE_DOTNET_APP: `udacity-<your_name>-azure-dotnet-app`
-7. Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
+5. Edit the Azure DNS for the container. Find this line in `starter/azure/main.tf` and replace `<your_name>` with your name:
     ```
       dns_name_label      = "udacity-tscotto-azure"
     ```
-7. For Azure, edit the resource group name (line 2) to reflect the name the lab assigns to you. You can find your resource group name by typing `Resource Group` in the search bar in the Azure portal, select Resource Groups and see your unique group name. It will look similar to `Regroup_4hEF_2G`.
-6. Services you select will be added after commented line `####### Your Additions Will Start Here ######` in the respective cloud provider `main.tf` file.
-7. After you have added the modules, applies the changes to the files and push your changes to your github repositories
-8. Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
-9. In each shell, run the following:
+6. For Azure, edit the resource group name (line 2) to reflect the name the lab assigns to you. You can find your resource group name by typing `Resource Group` in the search bar in the Azure portal, select Resource Groups and see your unique group name. It will look similar to `Regroup_4hEF_2G`.
+7. Services you select will be added after commented line `####### Your Additions Will Start Here ######` in the respective cloud provider `main.tf` file.
+8. After you have added the modules, applies the changes to the files and push your changes to your github repositories
+9. Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
+#### Troubleshooting Tips:
+- In AWS you may only be able to run 1 or 2 exercises at a time. If you get an error in the AWS console about not having enough space or out of space, please run the following commands:
+    - `cd ~`
+    - `rm -rf *`
+
+- In Azure, you may receive an error when provisioning your cloud console similar to "Storage Account Creation Failed" or "Authorization Failed". This is likely because you did not select the pre-created resource group from the lab. The pre-created resource group is already selected and is required for the labs. The pre-created resource group name will be similar to `Regroup_4hEF_2G`. When provisioning your cloud console, first select `Show advanced settings`, then ensure you leave the resource group as the default.
+
+- In Azure, you may receive an error when running terraform about resource group creation failed. This is likely because you did not change the resource group name in the `main.tf` file to reflect your unique resource group name the Azure labs assign you. The resource group name will look similar to this: `Regroup_4hEF_2G`
+
+10. In each shell, run the following:
 
     For AWS:
     ```
@@ -93,8 +102,8 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
 
     And type `yes` and enter when asked if you want to apply the changes
-10. Wait for the changes to apply. This can take up to 20 min.
-11. Verify the changes took effect:
+11. Wait for the changes to apply. This can take up to 20 min.
+12. Verify the changes took effect:
 
     For Azure:
     1. In Azure go the search bar and type `container-instances` and click the icon that comes up
@@ -115,9 +124,9 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
                 This is my app running on AWS accessing an Azure SQL instance: tscotto-udacity-sql
 
                 And also a dotnet app in Azure: udacity-tscotto-azure-dotnet-app
-12. Please take a screenshot of a running web applications in a browser
-13. Complete!
-14. Clean up resources
+13. Please take a screenshot of a running web applications in a browser
+14. Complete!
+15. Clean up resources
 
     For AWS:
     ```
@@ -132,7 +141,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
 
     And type `yes` and press enter when asked if you want to destroy the resources
-15. Please take a screenshot of the cloud console showing the successful Terraform destroy command
+16. Please take a screenshot of the cloud console showing the successful Terraform destroy command
 
 
 ## Standout Suggestions
@@ -140,16 +149,6 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 1. Deploy more than 2 services in either cloud provider
 2. Create an additional environment variable to demonstrate even more connectivity between additional services
 3. Create another demonstration application similar to the one used in the project and show it accessing cloud resources
-
-## Troubleshooting Tips:
-- In AWS you may only be able to run 1 or 2 exercises at a time. If you get an error in the AWS console about not having enough space or out of space, please run the following commands:
-    - `cd ~`
-    - `rm -rf *`
-
-- In Azure, you may receive an error when provisioning your cloud console similar to "Storage Account Creation Failed" or "Authorization Failed". This is likely because you did not select the pre-created resource group from the lab. The pre-created resource group is already selected and is required for the labs. The pre-created resource group name will be similar to `Regroup_4hEF_2G`. When provisioning your cloud console, first select `Show advanced settings`, then ensure you leave the resource group as the default.
-
-- In Azure, you may receive an error when running terraform about resource group creation failed. This is likely because you did not change the resource group name in the `main.tf` file to reflect your unique resource group name the Azure labs assign you. The resource group name will look similar to this: `Regroup_4hEF_2G`
-
 
 ## License
 
