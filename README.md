@@ -74,6 +74,7 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     ```
       dns_name_label      = "udacity-tscotto-azure"
     ```
+7. For Azure, edit the resource group name (line 2) to reflect the name the lab assigns to you. You can find your resource group name by typing `Resource Group` in the search bar in the Azure portal, select Resource Groups and see your unique group name. It will look similar to `Regroup_4hEF_2G`.
 6. Services you select will be added after commented line `####### Your Additions Will Start Here ######` in the respective cloud provider `main.tf` file.
 7. After you have added the modules, applies the changes to the files and push your changes to your github repositories
 8. Pull a fresh copy of your github repository into your AWS and Azure Cloud Shells
@@ -146,6 +147,8 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
     - `rm -rf *`
 
 - In Azure, you may receive an error when provisioning your cloud console similar to "Storage Account Creation Failed" or "Authorization Failed". This is likely because you did not select the pre-created resource group from the lab. The pre-created resource group is already selected and is required for the labs. The pre-created resource group name will be similar to `Regroup_4hEF_2G`. When provisioning your cloud console, first select `Show advanced settings`, then ensure you leave the resource group as the default.
+
+- In Azure, you may receive an error when running terraform about resource group creation failed. This is likely because you did not change the resource group name in the `main.tf` file to reflect your unique resource group name the Azure labs assign you. The resource group name will look similar to this: `Regroup_4hEF_2G`
 
 
 ## License
